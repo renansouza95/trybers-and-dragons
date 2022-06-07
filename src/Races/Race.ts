@@ -12,9 +12,9 @@ abstract class Race {
     throw new Error('Not implemented');
   }
 
-  get name() { return this._name; }
+  get name(): string { return this.name; }
 
-  get dexterity() { return this._dexterity; }
+  get dexterity(): number { return this.dexterity; }
 }
 
 export default Race;
