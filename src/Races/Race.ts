@@ -1,7 +1,6 @@
 abstract class Race {
   private _name: string;
   private _dexterity: number;
-  abstract maxLifePoints: number;
 
   constructor(name: string, dexterity: number) {
     this._name = name;
@@ -11,6 +10,8 @@ abstract class Race {
   static createdRacesInstances(): number { 
     throw new Error('Not implemented');
   }
+
+  abstract get maxLifePoints(): number;
 
   get name(): string { return this.name; }
 
